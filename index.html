@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="app">
+            <h1 class="content" style="text-align: center;">Curriculum Vitae {{ nombre}}  {{apellidos}}</h1>
+            <h2>{{ correo }}</h2>
+            <h3>{{subtitulo}}</h3>
+            <img v-bind:src="imagen_src" alt="herramientas">
+        </div>
+    <!--aca se pega el CDN de vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="asset/main.js"></script>
+    </body>
+
+</html>

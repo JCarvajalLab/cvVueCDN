@@ -3,18 +3,142 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="asset/styles.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- Font Awesome -->
         <title>Document</title>
     </head>
     <body>
-        <div id="app">
-            <h1 class="content" style="text-align: center;">Curriculum Vitae {{ nombre}}  {{apellidos}}</h1>
-            <h2>{{ correo }}</h2>
-            <h3>{{subtitulo}}</h3>
-            <img v-bind:src="imagen_src" alt="herramientas">
+        <div class="container">
+            <div id="cabecera">
+                <div class="nombrePuesto">
+                    <h1 class="content">{{ nombre}} {{apellidos}}</h1>
+                    <h2>{{ rol }}</h2>
+                    <img v-bind:src="foto" alt="herramientas">
+                </div>
+            </div>
+            <div class="contenidoCV" id="contenidoCV">
+                <section class="habilidades">
+                    <h3>Perfil Profesional</h3>
+                    <hr>
+                    <br>
+                    <p class="CartaPresentacion">{{carta}}</p>
+                    <br>
+                    <!-- Habilidades -->
+                    <h3><i class="fas fa-cogs"> Habilidades</i></h3>
+                    <hr>
+                    <br>
+                    <div class="grafico">
+                        <div class="donut-hole"></div>
+                        <div class="sector" id="sector1"></div>
+                        <div class="sector" id="sector2"></div>
+                        <div class="sector" id="sector3"></div>
+                    </div>
+                    <div class="habilidad">Trabajo en Equipo</div>
+                    <br>
+                    <div class="grafico">
+                        <div class="donut-hole"></div>
+                        <div class="sector" id="sector1"></div>
+                        <div class="sector" id="sector2"></div>
+                        <div class="sector" id="sector3"></div>
+                    </div>
+                    <div class="habilidad">Gestion de Proyectos</div>
+                    <br>
+                    <div class="grafico">
+                        <div class="donut-hole"></div>
+                        <div class="sector" id="sector1"></div>
+                        <div class="sector" id="sector2"></div>
+                        <div class="sector" id="sector3"></div>
+                    </div>
+                    <div class="habilidad">Liderazgo</div>
+                    <br>
+                    <!-- Idiomas -->
+                    <br>
+                    <h3><i class="fas fa-language"> Idiomas</i></h3>
+                    <hr>
+                    <br>
+                    <div class="grafico">
+                        <div class="donut-hole"></div>
+                        <div class="sector" id="sector1"></div>
+                        <div class="sector" id="sector2"></div>
+                        <div class="sector" id="sector3"></div>
+                    </div>
+                    <div class="habilidad">Español</div>
+                    <br>
+                    <div class="grafico">
+                        <div class="donut-hole"></div>
+                        <div class="sector" id="sector1"></div>
+                        <div class="sector" id="sector2"></div>
+                        <div class="sector" id="sector3"></div>
+                    </div>
+                    <div class="habilidad">Español chileno</div>
+                    <br>
+                    <div class="grafico">
+                        <div class="donut-hole"></div>
+                        <div class="sector" id="sector1"></div>
+                        <div class="sector" id="sector2"></div>
+                        <div class="sector" id="sector3"></div>
+                    </div>
+                    <div class="habilidad">Spanglish</div>
+                    <br>
+                    <br>
+                    <!-- Contacto -->
+                    <h3><i class="fas fa-envelope"> Informacion de
+                            contacto</i></h3>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> {{ telefono }}</li>
+                        <li><i class="fas fa-envelope"></i> {{ correo }}</li>
+                        <li><i class="fab fa-linkedin"></i> <a href="#">{{
+                                linkedin }}</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> {{ direccion
+                            }}</li>
+                    </ul>
+                </section>
+                <section class="experiencia">
+                    <h3><i class="fas fa-briefcase"> Experiencia laboral</i></h3>
+                    <hr>
+                    <h4>Puesto</h4>
+                    <div class="nombreEmpresa">NombreEmpresa</div>
+                    <div class="anosTrabajo">2006 -2008</div>
+                    <p class="descripcionPuesto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, explicabo voluptatibus? A dolor sapiente debitis! Voluptates natus facere ipsam, corrupti veritatis ad expedita quibusdam assumenda, maxime et, porro nemo incidunt?</p>
+
+                    <hr>
+                    <h4>Puesto</h4>
+                    <div class="nombreEmpresa">NombreEmpresa</div>
+                    <div class="anosTrabajo">2006 -2008</div>
+                    <p class="descripcionPuesto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, explicabo voluptatibus? A dolor sapiente debitis! Voluptates natus facere ipsam, corrupti veritatis ad expedita quibusdam assumenda, maxime et, porro nemo incidunt?</p>
+                    
+
+                    <hr>
+                    <h4>Carrera</h4>
+                    <div class="nombreColegio">NombreEscuela</div>
+                    <div class="anosTrabajo">2006 -2008</div>
+                    <p class="descripcionPuesto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, explicabo voluptatibus? A dolor sapiente debitis! Voluptates natus facere ipsam, corrupti veritatis ad expedita quibusdam assumenda, maxime et, porro nemo incidunt?</p>
+                    
+                    <hr>
+                    <h4>Puesto</h4>
+                    <div class="nombreEmpresa">NombreEmpresa</div>
+                    <div class="anosTrabajo">2006 -2008</div>
+                    <p class="descripcionPuesto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, explicabo voluptatibus? A dolor sapiente debitis! Voluptates natus facere ipsam, corrupti veritatis ad expedita quibusdam assumenda, maxime et, porro nemo incidunt?</p>
+                    <br>
+
+                    <h3><i class="fas fa-briefcase"> Antecedentes Académicos</i></h3>
+                    <hr>
+                    <h4>Puesto</h4>
+                    <div class="nombreEmpresa">NombreEmpresa</div>
+                    <div class="anosTrabajo">2006 -2008</div>
+                    <p class="descripcionPuesto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, explicabo voluptatibus? A dolor sapiente debitis! Voluptates natus facere ipsam, corrupti veritatis ad expedita quibusdam assumenda, maxime et, porro nemo incidunt?</p>
+
+                </section>
+            </div>
         </div>
-    <!--aca se pega el CDN de vue-->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="asset/main.js"></script>
+        <!--aca se pega el CDN de vue-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="asset/main.js"></script>
     </body>
 
 </html>

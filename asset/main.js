@@ -27,5 +27,13 @@ const contenidoCV = new Vue({
         telefono: " +569 30458517",
         linkedin: "Perfil en Linkedin",
         direccion: "Puente Alto",
+        trabajos: [
+            {empresa: 'JCP LTDA', anio: '2013', descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatum mollitia eligendi dolore minima adipisci magni repellendus veniam. Mollitia distinctio ab ea praesentium quaerat error modi explicabo autem tempore accusamus."},
+            {empresa: 'Conytec consultores SPA.', anio: '2018', descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatum mollitia eligendi dolore minima adipisci magni repellendus veniam. Mollitia distinctio ab ea praesentium quaerat error modi explicabo autem tempore accusamus."},
+            {empresa: 'Entel Empresas de Contact Center', anio: '2021', descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatum mollitia eligendi dolore minima adipisci magni repellendus veniam. Mollitia distinctio ab ea praesentium quaerat error modi explicabo autem tempore accusamus."}
+        ],
+        educacion: [
+            {titulo: 'Ingenieria en informatica', institucion: 'Universidad Tecnológica de chile (INACAP)', anios: '2013 - 2018'},
+        ]
     }
-})
+});

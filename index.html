@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="asset/styles.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="asset/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
         <!-- Font Awesome -->
         <title>Document</title>
     </head>
+
     <body>
         <div class="container">
-            <div id="cabecera">
+            <div class="cabecera" id="cabecera">
+                <div class="perfil">
+                    <img v-bind:src="foto" alt="herramientas" />
+                </div>
                 <div class="nombrePuesto">
                     <h1 class="content">{{ nombre}} {{apellidos}}</h1>
                     <h2>{{ rol }}</h2>
-                    <img v-bind:src="foto" alt="herramientas">
                 </div>
             </div>
+
             <div class="contenidoCV" id="contenidoCV">
                 <section class="habilidades">
                     <h3>Perfil Profesional</h3>
-                    <hr>
-                    <br>
+                    <hr />
+                    <br />
                     <p class="CartaPresentacion">{{carta}}</p>
-                    <br>
+                    <br />
                     <!-- Habilidades -->
-                    <h3><i class="fas fa-cogs"> Habilidades</i></h3>
-                    <hr>
-                    <br>
+                    <h3><i class="fas fa-cogs"></i> Habilidades</h3>
+                    <hr />
+                    <br />
                     <div class="grafico">
                         <div class="donut-hole"></div>
                         <div class="sector" id="sector1"></div>
@@ -36,7 +41,7 @@
                         <div class="sector" id="sector3"></div>
                     </div>
                     <div class="habilidad">Trabajo en Equipo</div>
-                    <br>
+                    <br />
                     <div class="grafico">
                         <div class="donut-hole"></div>
                         <div class="sector" id="sector1"></div>
@@ -44,7 +49,7 @@
                         <div class="sector" id="sector3"></div>
                     </div>
                     <div class="habilidad">Gestion de Proyectos</div>
-                    <br>
+                    <br />
                     <div class="grafico">
                         <div class="donut-hole"></div>
                         <div class="sector" id="sector1"></div>
@@ -52,12 +57,12 @@
                         <div class="sector" id="sector3"></div>
                     </div>
                     <div class="habilidad">Liderazgo</div>
-                    <br>
+                    <br />
                     <!-- Idiomas -->
-                    <br>
-                    <h3><i class="fas fa-language"> Idiomas</i></h3>
-                    <hr>
-                    <br>
+                    <br />
+                    <h3><i class="fas fa-language"></i> Idiomas</h3>
+                    <hr />
+                    <br />
                     <div class="grafico">
                         <div class="donut-hole"></div>
                         <div class="sector" id="sector1"></div>
@@ -65,7 +70,7 @@
                         <div class="sector" id="sector3"></div>
                     </div>
                     <div class="habilidad">Español</div>
-                    <br>
+                    <br />
                     <div class="grafico">
                         <div class="donut-hole"></div>
                         <div class="sector" id="sector1"></div>
@@ -73,7 +78,7 @@
                         <div class="sector" id="sector3"></div>
                     </div>
                     <div class="habilidad">Español chileno</div>
-                    <br>
+                    <br />
                     <div class="grafico">
                         <div class="donut-hole"></div>
                         <div class="sector" id="sector1"></div>
@@ -81,69 +86,48 @@
                         <div class="sector" id="sector3"></div>
                     </div>
                     <div class="habilidad">Spanglish</div>
-                    <br>
-                    <br>
+                    <br />
+                    <br />
                     <!-- Contacto -->
-                    <h3><i class="fas fa-envelope"> Informacion de
-                            contacto</i></h3>
-                    <hr>
-                    <br>
+                    <h3><i class="fas fa-envelope"></i> Informacion de
+                            contacto</h3>
+                    <hr />
+                    <br />
                     <ul>
                         <li><i class="fas fa-phone"></i> {{ telefono }}</li>
                         <li><i class="fas fa-envelope"></i> {{ correo }}</li>
-                        <li><i class="fab fa-linkedin"></i> <a href="#">{{
-                                linkedin }}</a></li>
+                        <li>
+                            <i class="fab fa-linkedin"></i> <a href="#">{{
+                                linkedin }}</a>
+                        </li>
                         <li><i class="fas fa-map-marker-alt"></i> {{ direccion
                             }}</li>
                     </ul>
                 </section>
-                <section class="experiencia">
-                    <h3><i class="fas fa-briefcase"> Experiencia laboral</i></h3>
-                    <hr>
-                    <h4>Puesto</h4>
-                    <div class="nombreEmpresa">NombreEmpresa</div>
-                    <div class="anosTrabajo">2006 -2008</div>
-                    <p class="descripcionPuesto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, explicabo voluptatibus? A dolor sapiente debitis! Voluptates natus facere ipsam, corrupti veritatis ad expedita quibusdam assumenda, maxime et, porro nemo incidunt?</p>
-
-                    <hr>
-                    <h4>Puesto</h4>
-                    <div class="nombreEmpresa">NombreEmpresa</div>
-                    <div class="anosTrabajo">2006 -2008</div>
-                    <p class="descripcionPuesto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, explicabo voluptatibus? A dolor sapiente debitis! Voluptates natus facere ipsam, corrupti veritatis ad expedita quibusdam assumenda, maxime et, porro nemo incidunt?</p>
+                <!-- Barra de la derecha -->
+                <section class="experiencias">
                     
-
-                    <hr>
-                    <h4>Puesto</h4>
-                    <div class="nombreEmpresa">NombreEscuela</div>
-                    <div class="anosTrabajo">2006 -2008</div>
-                    <p class="descripcionPuesto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, explicabo voluptatibus? A dolor sapiente debitis! Voluptates natus facere ipsam, corrupti veritatis ad expedita quibusdam assumenda, maxime et, porro nemo incidunt?</p>
-                    
-                    <hr>
-                    <h4>Puesto</h4>
-                    <div class="nombreEmpresa">NombreEmpresa</div>
-                    <div class="anosTrabajo">2006 -2008</div>
-                    <p class="descripcionPuesto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, explicabo voluptatibus? A dolor sapiente debitis! Voluptates natus facere ipsam, corrupti veritatis ad expedita quibusdam assumenda, maxime et, porro nemo incidunt?</p>
-                    <br>
-
-                    <h3><i class="fas fa-briefcase"> Antecedentes Académicos</i></h3>
-                    <hr>
-                    <h4>Carrera</h4>
-                    <div class="nombreColegio">NombreEmpresa</div>
-                    <div class="anosTrabajo">2006 -2008</div>
-                    <p class="descripcionPuesto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, explicabo voluptatibus? A dolor sapiente debitis! Voluptates natus facere ipsam, corrupti veritatis ad expedita quibusdam assumenda, maxime et, porro nemo incidunt?</p>
-
-                    <hr>
-                    <h4>Puesto</h4>
-                    <div class="nombreEmpresa">NombreEmpresa</div>
-                    <div class="anosTrabajo">2006 -2008</div>
-                    <p class="descripcionPuesto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, explicabo voluptatibus? A dolor sapiente debitis! Voluptates natus facere ipsam, corrupti veritatis ad expedita quibusdam assumenda, maxime et, porro nemo incidunt?</p>
-
-                    <hr>
-                    <h4>Puesto</h4>
-                    <div class="nombreEmpresa">NombreEmpresa</div>
-                    <div class="anosTrabajo">2006 -2008</div>
-                    <p class="descripcionPuesto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, explicabo voluptatibus? A dolor sapiente debitis! Voluptates natus facere ipsam, corrupti veritatis ad expedita quibusdam assumenda, maxime et, porro nemo incidunt?</p>
-
+                    <!-- Experiencia laboral -->
+                    <h3><i class="fas fa-briefcase"></i> Experiencia
+                            laboral</h3>
+                    <hr />
+                    <div v-for="(trabajo, index) in trabajos" :key="index">
+                        <h4>Trabajador de</h4>
+                        <div class="nombre">{{ trabajo.empresa }}</div>
+                        <div class="anos">{{ trabajo.anio }}</div>
+                        <p class="puesto">{{ trabajo.descripcion }}</p>
+                        <br />
+                    </div>
+                    <!-- Estudios -->
+                    <h3><i class="fas fa-graduation-cap"></i> Antecedentes Académicos</h3>
+                    <hr />
+                    <div v-for="(edu, index) in educacion" :key="index">
+                        <h4>Estudiante de</h4>
+                        <div class="nombre">{{ edu.titulo }}</div>
+                        <div class="anos">{{ edu.anios }}</div>
+                        <p class="puesto">{{ edu.institucion }}</p>
+                        <br />
+                </div>
                 </section>
             </div>
         </div>
@@ -152,5 +136,4 @@
             src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
         <script src="asset/main.js"></script>
     </body>
-
 </html>
